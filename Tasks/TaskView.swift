@@ -13,37 +13,21 @@ struct TaskView: View {
   @Query<TaskModel>(sort: [SortDescriptor(\.completedDate),
                            SortDescriptor(\.priority)])
   private var tasks: [TaskModel]
-  @State private var deleteTask = false
-  @State private var taskToDelete: TaskModel?
   
-    var body: some View {
-        List {
-          ForEach(tasks) { task in
-            HStack {
-              TaskRowView(task: task)
-              Button("Delete Task", systemImage: "trash") {
-                taskToDelete = task
-                deleteTask = true
-              }
-              .labelStyle(.iconOnly)
-              .padding(.leading)
-              .foregroundStyle(.red)   }
-          }
-          //.onDelete(perform: deleteTask)
-        }
-        .alert("Delete Task?", isPresented: $deleteTask) {
-          Button("Delete", role: .destructive) {
-            modelContext.delete(taskToDelete!)
-            taskToDelete = nil
-          }
-        }
-        //.font(.title)
+  var body: some View {
+    List {
+      ForEach(tasks) { task in
+        TaskRowView(task: task)
+      }
     }
-//  private func deleteTask(indexSet: IndexSet) {
-//    for index in indexSet {
-//      modelContext.delete(tasks[index])
-//    }
-//  }
+    Button("Delete Completed", systemImage: "trash") {
+      let predicate = #Predicate<TaskModel> {
+        task in
+        task.completedDate != nil
+      }
+      try? modelContext.delete(model: TaskModel.self, where: predicate)
+    }
+  }
 }
 
 #Preview {
