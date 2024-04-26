@@ -13,7 +13,17 @@ struct TasksApp: App {
     var body: some Scene {
         WindowGroup {
             ModelContextAutosave()
-            .modelContainer(for: TaskModel.self, isAutosaveEnabled: false)
+            //.modelContainer(for: TaskModel.self, isAutosaveEnabled: false)
+            .modelContainer(container)
         }
     }
+  
+  @MainActor
+  var container: ModelContainer {
+    let schema = Schema([TaskModel.self])
+    let container = try! ModelContainer(for: schema)
+    container.mainContext.autosaveEnabled = false
+    
+    return container
+  }
 }
