@@ -15,6 +15,8 @@
 		2A4BE9072BDB71CB0057AC70 /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4BE9062BDB71CB0057AC70 /* TaskRowView.swift */; };
 		2A4BE9092BDB79FF0057AC70 /* ModelContextUpdateTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4BE9082BDB79FF0057AC70 /* ModelContextUpdateTask.swift */; };
 		2A4BE90B2BDB7AFC0057AC70 /* EditTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4BE90A2BDB7AFC0057AC70 /* EditTaskView.swift */; };
+		2A4BE90D2BDB7FBD0057AC70 /* ModelContextInsert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4BE90C2BDB7FBD0057AC70 /* ModelContextInsert.swift */; };
+		2A4BE90F2BDB817E0057AC70 /* InsertTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4BE90E2BDB817E0057AC70 /* InsertTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		2A4BE9062BDB71CB0057AC70 /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
 		2A4BE9082BDB79FF0057AC70 /* ModelContextUpdateTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelContextUpdateTask.swift; sourceTree = "<group>"; };
 		2A4BE90A2BDB7AFC0057AC70 /* EditTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskView.swift; sourceTree = "<group>"; };
+		2A4BE90C2BDB7FBD0057AC70 /* ModelContextInsert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelContextInsert.swift; sourceTree = "<group>"; };
+		2A4BE90E2BDB817E0057AC70 /* InsertTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				2A4BE9062BDB71CB0057AC70 /* TaskRowView.swift */,
 				2A4BE9082BDB79FF0057AC70 /* ModelContextUpdateTask.swift */,
 				2A4BE90A2BDB7AFC0057AC70 /* EditTaskView.swift */,
+				2A4BE90C2BDB7FBD0057AC70 /* ModelContextInsert.swift */,
+				2A4BE90E2BDB817E0057AC70 /* InsertTaskView.swift */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -151,6 +157,8 @@
 			files = (
 				2A4BE9052BDB6C030057AC70 /* TaskModel.swift in Sources */,
 				2A4BE8F92BDB6BE40057AC70 /* TaskView.swift in Sources */,
+				2A4BE90F2BDB817E0057AC70 /* InsertTaskView.swift in Sources */,
+				2A4BE90D2BDB7FBD0057AC70 /* ModelContextInsert.swift in Sources */,
 				2A4BE9092BDB79FF0057AC70 /* ModelContextUpdateTask.swift in Sources */,
 				2A4BE90B2BDB7AFC0057AC70 /* EditTaskView.swift in Sources */,
 				2A4BE9072BDB71CB0057AC70 /* TaskRowView.swift in Sources */,
