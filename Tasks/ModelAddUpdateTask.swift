@@ -37,7 +37,7 @@ struct ModelAddUpdateTask: View {
     }
 }
 
-#Preview {
+#Preview("Main View") {
     ModelAddUpdateTask()
     .modelContainer(TaskModel.preview)
 }

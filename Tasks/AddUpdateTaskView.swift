@@ -66,7 +66,18 @@ struct AddUpdateTaskView: View {
   }
 }
 
-
-#Preview {
+#Preview("Add Task") {
+  return NavigationStack {
     AddUpdateTaskView()
+  }
+  .modelContainer(TaskModel.preview)
+}
+
+
+#Preview("Update Task") {
+  let _ = TaskModel.preview
+  let task = TaskModel(taskName: "Do Something", priority: 1)
+  return NavigationStack {
+    AddUpdateTaskView(task: task)
+  }
 }
