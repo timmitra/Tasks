@@ -18,3 +18,11 @@ struct ModelContextAutosave: View {
     ModelContextAutosave()
     .modelContainer(for: TaskModel.self, isUndoEnabled: true)
 }
+
+#Preview("On ModelContext") {
+  let container = try! ModelContainer(for: Schema([TaskModel.self]))
+  container.mainContext.autosaveEnabled = false
+  
+  return ModelContextAutosave()
+    .modelContainer(container)
+}
