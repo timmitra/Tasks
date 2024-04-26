@@ -30,7 +30,18 @@ struct TaskView: View {
   }
 }
 
-#Preview {
-    TaskView()
-    .modelContainer(TaskModel.preview)
+//#Preview {
+//    TaskView()
+//    .modelContainer(TaskModel.preview)
+//}
+
+#Preview("Task Incomplete") {
+  let container = try! ModelContainer(for: TaskModel.self,
+  configurations: ModelConfiguration(isStoredInMemoryOnly: true))
+  
+  return List {
+    TaskRowView(task: TaskModel(taskName: "Priority 1", priority: 1))
+    TaskRowView(task: TaskModel(taskName: "Priority 2", priority: 2))
+    TaskRowView(task: TaskModel(taskName: "Priority 3", priority: 3))
+  }
 }
