@@ -19,6 +19,7 @@
 		2A4BE90F2BDB817E0057AC70 /* InsertTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4BE90E2BDB817E0057AC70 /* InsertTaskView.swift */; };
 		2A4BE9112BDBF1680057AC70 /* ModelAddUpdateTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4BE9102BDBF1680057AC70 /* ModelAddUpdateTask.swift */; };
 		2A4BE9132BDBF1D90057AC70 /* AddUpdateTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4BE9122BDBF1D90057AC70 /* AddUpdateTaskView.swift */; };
+		2A4BE9152BDC00610057AC70 /* ModelContextAutosave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4BE9142BDC00610057AC70 /* ModelContextAutosave.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		2A4BE90E2BDB817E0057AC70 /* InsertTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertTaskView.swift; sourceTree = "<group>"; };
 		2A4BE9102BDBF1680057AC70 /* ModelAddUpdateTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelAddUpdateTask.swift; sourceTree = "<group>"; };
 		2A4BE9122BDBF1D90057AC70 /* AddUpdateTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUpdateTaskView.swift; sourceTree = "<group>"; };
+		2A4BE9142BDC00610057AC70 /* ModelContextAutosave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelContextAutosave.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				2A4BE90E2BDB817E0057AC70 /* InsertTaskView.swift */,
 				2A4BE9102BDBF1680057AC70 /* ModelAddUpdateTask.swift */,
 				2A4BE9122BDBF1D90057AC70 /* AddUpdateTaskView.swift */,
+				2A4BE9142BDC00610057AC70 /* ModelContextAutosave.swift */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A4BE9152BDC00610057AC70 /* ModelContextAutosave.swift in Sources */,
 				2A4BE9052BDB6C030057AC70 /* TaskModel.swift in Sources */,
 				2A4BE8F92BDB6BE40057AC70 /* TaskView.swift in Sources */,
 				2A4BE9132BDBF1D90057AC70 /* AddUpdateTaskView.swift in Sources */,

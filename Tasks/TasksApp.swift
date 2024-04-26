@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct TasksApp: App {
     var body: some Scene {
         WindowGroup {
-            TaskView()
+            ModelContextAutosave()
+            .modelContainer(for: TaskModel.self, isAutosaveEnabled: false)
         }
     }
 }
