@@ -24,6 +24,7 @@ struct TasksApp: App {
     //let container = try! ModelContainer(for: schema)
     let container = TaskModel.preview
     container.mainContext.autosaveEnabled = false
+    container.mainContext.undoManager = UndoManager()
     
     return container
   }
