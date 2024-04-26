@@ -20,8 +20,9 @@ struct TasksApp: App {
   
   @MainActor
   var container: ModelContainer {
-    let schema = Schema([TaskModel.self])
-    let container = try! ModelContainer(for: schema)
+    //let schema = Schema([TaskModel.self])
+    //let container = try! ModelContainer(for: schema)
+    let container = TaskModel.preview
     container.mainContext.autosaveEnabled = false
     
     return container

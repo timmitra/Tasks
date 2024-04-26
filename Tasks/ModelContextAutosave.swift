@@ -20,7 +20,8 @@ struct ModelContextAutosave: View {
 }
 
 #Preview("On ModelContext") {
-  let container = try! ModelContainer(for: Schema([TaskModel.self]))
+  //let container = try! ModelContainer(for: Schema([TaskModel.self]))
+  let container = TaskModel.preview
   container.mainContext.autosaveEnabled = false
   
   return ModelContextAutosave()
