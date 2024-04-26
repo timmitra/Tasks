@@ -22,6 +22,7 @@
 		2A4BE9152BDC00610057AC70 /* ModelContextAutosave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4BE9142BDC00610057AC70 /* ModelContextAutosave.swift */; };
 		2A4BE9172BDC03F50057AC70 /* ModelContextCheckForChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4BE9162BDC03F50057AC70 /* ModelContextCheckForChanges.swift */; };
 		2A4BE9192BDC32F10057AC70 /* UndoRedoIntro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4BE9182BDC32F10057AC70 /* UndoRedoIntro.swift */; };
+		2A4BE91B2BDC374A0057AC70 /* RollbackCanRedo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4BE91A2BDC374A0057AC70 /* RollbackCanRedo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		2A4BE9142BDC00610057AC70 /* ModelContextAutosave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelContextAutosave.swift; sourceTree = "<group>"; };
 		2A4BE9162BDC03F50057AC70 /* ModelContextCheckForChanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelContextCheckForChanges.swift; sourceTree = "<group>"; };
 		2A4BE9182BDC32F10057AC70 /* UndoRedoIntro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoRedoIntro.swift; sourceTree = "<group>"; };
+		2A4BE91A2BDC374A0057AC70 /* RollbackCanRedo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollbackCanRedo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				2A4BE9142BDC00610057AC70 /* ModelContextAutosave.swift */,
 				2A4BE9162BDC03F50057AC70 /* ModelContextCheckForChanges.swift */,
 				2A4BE9182BDC32F10057AC70 /* UndoRedoIntro.swift */,
+				2A4BE91A2BDC374A0057AC70 /* RollbackCanRedo.swift */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				2A4BE9192BDC32F10057AC70 /* UndoRedoIntro.swift in Sources */,
 				2A4BE9152BDC00610057AC70 /* ModelContextAutosave.swift in Sources */,
 				2A4BE9052BDB6C030057AC70 /* TaskModel.swift in Sources */,
+				2A4BE91B2BDC374A0057AC70 /* RollbackCanRedo.swift in Sources */,
 				2A4BE8F92BDB6BE40057AC70 /* TaskView.swift in Sources */,
 				2A4BE9132BDBF1D90057AC70 /* AddUpdateTaskView.swift in Sources */,
 				2A4BE90F2BDB817E0057AC70 /* InsertTaskView.swift in Sources */,
