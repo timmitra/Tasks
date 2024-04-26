@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 struct TaskView: View {
-  @Environment(\.modelContext) private var modelContext
+  //@Environment(\.modelContext) private var modelContext
   @Query<TaskModel>(sort: [SortDescriptor(\.completedDate),
                            SortDescriptor(\.priority)])
   private var tasks: [TaskModel]
@@ -18,14 +18,15 @@ struct TaskView: View {
     List {
       ForEach(tasks) { task in
         TaskRowView(task: task)
+          .swipeActions(edge: .leading, allowsFullSwipe: true) {
+            Button {
+              task.completedDate = task.completedDate == nil ? Date.now : nil
+            } label: {
+              Image(systemName: task.completedDate == nil ? "checkmark.square" : "arrow.uturn.backward.square")
+            }
+            .tint(task.completedDate == nil ? .green : .blue)
+          }
       }
-    }
-    Button("Delete Completed", systemImage: "trash") {
-      let predicate = #Predicate<TaskModel> {
-        task in
-        task.completedDate != nil
-      }
-      try? modelContext.delete(model: TaskModel.self, where: predicate)
     }
   }
 }
