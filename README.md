@@ -1,2 +1,2 @@
 Working though SwiftData Mastery in SwiftUI
-(link)[title]
+- [SwiftData Mastery in SwiftUI](https://www.bigmountainstudio.com/swiftdata/umfkb)
